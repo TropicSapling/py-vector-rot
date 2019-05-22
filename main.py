@@ -21,7 +21,7 @@ for _ in range(count):
 	plt.ylim(-10, 10)
 	
 	# Rotate vector
-	rotated_vector = the_matrix.dot(rotated_vector) # Dot product of The Matrix and the vector, resulting in rotating the vector
+	rotated_vector = the_matrix.dot(rotated_vector) # Performs matrix multiplication on The Matrix and the vector, resulting in rotating the vector
 	
 	# Draw vectors
 	plt.quiver([0, 0], [0, 0], [vector[0], rotated_vector[0]], [vector[1], rotated_vector[1]], color=['r', 'g'], angles='xy', scale_units='xy', scale=1)
